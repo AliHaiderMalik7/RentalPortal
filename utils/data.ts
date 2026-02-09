@@ -1,0 +1,198 @@
+import { FaDollarSign, FaEuroSign, FaPoundSign } from "react-icons/fa";
+
+// Dummy data for properties
+export const properties = [
+    {
+      id: '1',
+      address: '23 Baker Street',
+      postcode: 'NW1 6XE',
+      propertyType: 'flat',
+      bedrooms: 2,
+      rentAmount: 1250, // monthly rent in GBP
+      status: 'maintenance',
+      description: 'Modern 2-bed flat near Regent\'s Park',
+      createdAt: Date.now()
+    },
+    {
+      id: '2',
+      address: '10 Downing Street',
+      postcode: 'SW1A 2AA',
+      propertyType: 'house',
+      bedrooms: 4,
+      rentAmount: 3200, // monthly rent in GBP
+      status: 'occupied',
+      description: 'Historic townhouse in central London',
+      createdAt: Date.now() - 86400000
+    },
+    {
+      id: '3',
+      address: '221B Baker Street',
+      postcode: 'NW1 6XE',
+      propertyType: 'flat',
+      bedrooms: 1,
+      rentAmount: 950, // monthly rent in GBP
+      status: 'vacant',
+      description: 'Cozy studio near Marylebone Station',
+      createdAt: Date.now() - 172800000
+    },
+  ];
+  
+
+  export const alerts = [
+  {
+    id: '1',
+    type: 'payment',
+    message: 'Rent overdue for 123 Main St',
+    createdAt: new Date().toISOString()
+  }
+];
+
+export const tenants = [
+    {
+      id: '1',
+      name: 'John Smith',
+      propertyId: '1',
+      paymentStatus: 'late',
+      openIssues: 1,
+      leaseStart: '2023-01-01',
+      leaseEnd: '2024-01-01'
+    },
+    {
+      id: '2',
+      name: 'Sarah Johnson',
+      propertyId: '2', 
+      paymentStatus: 'paid',
+      openIssues: 0,
+      leaseStart: '2023-03-15',
+      leaseEnd: '2024-03-15'
+    }
+  ];
+
+  export const payments = [
+    { month: 'Jan', amount: 1200 },
+    { month: 'Feb', amount: 1350 },
+    { month: 'Mar', amount: 1100 },
+    { month: 'Apr', amount: 1400 },
+    { month: 'May', amount: 1250 },
+    { month: 'Jun', amount: 1600 },
+    { month: 'Jul', amount: 1550 },
+    { month: 'Aug', amount: 1300 },
+    { month: 'Sep', amount: 1450 },
+    { month: 'Oct', amount: 1500 },
+    { month: 'Nov', amount: 1400 },
+    { month: 'Dec', amount: 1700 },
+  ];
+  
+  export const currencies = [
+    { code: 'GBP', symbol: '£', icon: FaPoundSign, name: 'British Pound' },
+    { code: 'USD', symbol: '$', icon: FaDollarSign, name: 'US Dollar' },
+    { code: 'EUR', symbol: '€', icon: FaEuroSign, name: 'Euro' },
+    { code: 'CAD', symbol: '$', icon: FaDollarSign, name: 'Canadian Dollar' },
+    { code: 'AUD', symbol: '$', icon: FaDollarSign, name: 'Australian Dollar' },
+  ];
+
+  export const countryCodes = [
+                        { value: "+1", label: "+1 (US)" },
+                        { value: "+44", label: "+44 (UK)" },
+                        { value: "+33", label: "+33 (FR)" },
+                        { value: "+49", label: "+49 (DE)" },
+                        { value: "+39", label: "+39 (IT)" },
+                        { value: "+34", label: "+34 (ES)" },
+                        { value: "+31", label: "+31 (NL)" },
+                        { value: "+32", label: "+32 (BE)" },
+                        { value: "+41", label: "+41 (CH)" },
+                        { value: "+43", label: "+43 (AT)" },
+                        { value: "+45", label: "+45 (DK)" },
+                        { value: "+46", label: "+46 (SE)" },
+                        { value: "+47", label: "+47 (NO)" },
+                        { value: "+358", label: "+358 (FI)" },
+                        { value: "+353", label: "+353 (IE)" },
+                        { value: "+351", label: "+351 (PT)" },
+                        { value: "+30", label: "+30 (GR)" },
+                        { value: "+48", label: "+48 (PL)" },
+                        { value: "+420", label: "+420 (CZ)" },
+                        { value: "+421", label: "+421 (SK)" },
+                        { value: "+36", label: "+36 (HU)" },
+                        { value: "+40", label: "+40 (RO)" },
+                        { value: "+359", label: "+359 (BG)" },
+                        { value: "+385", label: "+385 (HR)" },
+                        { value: "+386", label: "+386 (SI)" },
+                        { value: "+372", label: "+372 (EE)" },
+                        { value: "+371", label: "+371 (LV)" },
+                        { value: "+370", label: "+370 (LT)" },
+                        { value: "+61", label: "+61 (AU)" },
+                        { value: "+64", label: "+64 (NZ)" },
+                        { value: "+81", label: "+81 (JP)" },
+                        { value: "+82", label: "+82 (KR)" },
+                        { value: "+86", label: "+86 (CN)" },
+                        { value: "+91", label: "+91 (IN)" },
+                        { value: "+55", label: "+55 (BR)" },
+                        { value: "+52", label: "+52 (MX)" },
+                        { value: "+54", label: "+54 (AR)" },
+                        { value: "+56", label: "+56 (CL)" },
+                        { value: "+57", label: "+57 (CO)" },
+                        { value: "+58", label: "+58 (VE)" },
+                        { value: "+51", label: "+51 (PE)" },
+                        { value: "+593", label: "+593 (EC)" },
+                        { value: "+595", label: "+595 (PY)" },
+                        { value: "+598", label: "+598 (UY)" },
+                        { value: "+27", label: "+27 (ZA)" },
+                        { value: "+20", label: "+20 (EG)" },
+                        { value: "+212", label: "+212 (MA)" },
+                        { value: "+213", label: "+213 (DZ)" },
+                        { value: "+216", label: "+216 (TN)" },
+                        { value: "+218", label: "+218 (LY)" },
+                        { value: "+220", label: "+220 (GM)" },
+                        { value: "+221", label: "+221 (SN)" },
+                        { value: "+222", label: "+222 (MR)" },
+                        { value: "+223", label: "+223 (ML)" },
+                        { value: "+224", label: "+224 (GN)" },
+                        { value: "+225", label: "+225 (CI)" },
+                        { value: "+226", label: "+226 (BF)" },
+                        { value: "+227", label: "+227 (NE)" },
+                        { value: "+228", label: "+228 (TG)" },
+                        { value: "+229", label: "+229 (BJ)" },
+                        { value: "+230", label: "+230 (MU)" },
+                        { value: "+231", label: "+231 (LR)" },
+                        { value: "+232", label: "+232 (SL)" },
+                        { value: "+233", label: "+233 (GH)" },
+                        { value: "+234", label: "+234 (NG)" },
+                        { value: "+235", label: "+235 (TD)" },
+                        { value: "+236", label: "+236 (CF)" },
+                        { value: "+237", label: "+237 (CM)" },
+                        { value: "+238", label: "+238 (CV)" },
+                        { value: "+239", label: "+239 (ST)" },
+                        { value: "+240", label: "+240 (GQ)" },
+                        { value: "+241", label: "+241 (GA)" },
+                        { value: "+242", label: "+242 (CG)" },
+                        { value: "+243", label: "+243 (CD)" },
+                        { value: "+244", label: "+244 (AO)" },
+                        { value: "+245", label: "+245 (GW)" },
+                        { value: "+246", label: "+246 (IO)" },
+                        { value: "+248", label: "+248 (SC)" },
+                        { value: "+249", label: "+249 (SD)" },
+                        { value: "+250", label: "+250 (RW)" },
+                        { value: "+251", label: "+251 (ET)" },
+                        { value: "+252", label: "+252 (SO)" },
+                        { value: "+253", label: "+253 (DJ)" },
+                        { value: "+254", label: "+254 (KE)" },
+                        { value: "+255", label: "+255 (TZ)" },
+                        { value: "+256", label: "+256 (UG)" },
+                        { value: "+257", label: "+257 (BI)" },
+                        { value: "+258", label: "+258 (MZ)" },
+                        { value: "+260", label: "+260 (ZM)" },
+                        { value: "+261", label: "+261 (MG)" },
+                        { value: "+262", label: "+262 (RE)" },
+                        { value: "+263", label: "+263 (ZW)" },
+                        { value: "+264", label: "+264 (NA)" },
+                        { value: "+265", label: "+265 (MW)" },
+                        { value: "+266", label: "+266 (LS)" },
+                        { value: "+267", label: "+267 (BW)" },
+                        { value: "+268", label: "+268 (SZ)" },
+                        { value: "+269", label: "+269 (KM)" },
+                        { value: "+290", label: "+290 (SH)" },
+                        { value: "+291", label: "+291 (ER)" },
+                        { value: "+297", label: "+297 (AW)" },
+                        { value: "+298", label: "+298 (FO)" },
+                        { value: "+299", label: "+299 (GL)" },
+                      ]
